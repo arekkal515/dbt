@@ -1,0 +1,14 @@
+# ignore virtual environment files
+venv/
+
+# ignore duckdb database
+*.duckdb
+
+# ignore Python temporary files
+__pycache__/
+*.pyc
+
+# igonre not relevant folders
+dbt_packages/
+target/
+logs/
