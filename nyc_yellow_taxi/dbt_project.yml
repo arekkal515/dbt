@@ -1,6 +1,7 @@
 name: nyc_yellow_taxi
 profile: nyc_yellow_taxi
 model-paths: ["models"]
+test-paths: ["tests"]
 
 models:
   nyc_yellow_taxi:
