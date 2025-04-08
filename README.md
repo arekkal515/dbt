@@ -23,4 +23,7 @@
 # Install dbt with DuckDB adapter
 pip install dbt-core dbt-duckdb
 ```
-
+#### testing
+```bash
+dbt test --select nyc_yellow_taxi
+```
