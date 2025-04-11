@@ -1,5 +1,10 @@
 version: 2
 
+sources:
+  - name: main
+    tables:
+      - name: taxi_rides_raw
+
 models:
   - name: taxi_rides_raw
     description: Initial import of the NYC Yellow Taxi trip data from Parquet source

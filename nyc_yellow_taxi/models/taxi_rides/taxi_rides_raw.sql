@@ -3,3 +3,4 @@ with source_data as (
 )
 select * from source_data
 where payment_type != 0
+limit 1000

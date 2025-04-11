@@ -2,7 +2,7 @@
 
 ### General information
 - The purpose of the project is to demonstrate a core of DBT functionalities such as dbt setup, model creation, Jinja templating, testing and documentation
-- Materials created based on https://campus.datacamp.com/courses/introduction-to-dbt/
+- Materials created based on https://campus.datacamp.com/courses/introduction-to-dbt/ and https://app.datacamp.com/learn/courses/intermediate-dbt
 
 ### Dataset
 - **Dataset** - TLC Trip Record Data from https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page
@@ -27,3 +27,8 @@ pip install dbt-core dbt-duckdb
 ```bash
 dbt test --select nyc_yellow_taxi
 ```
+
+#### seeds
+- Seeds - sets of data which are external, not contained to the database
+- use `dbt seed` in order to import seeds
+- `nynj_zipcodes.csv` downloaded from *DataCamp - Intermediate dbt*
