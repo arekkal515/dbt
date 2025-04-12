@@ -2,8 +2,12 @@ name: nyc_yellow_taxi
 profile: nyc_yellow_taxi
 model-paths: ["models"]
 test-paths: ["tests"]
+snapshot-paths: ["snapshots"]
 
 models:
   nyc_yellow_taxi:
     taxi_rides:
       +materialized: view
+snapshots:
+  nyc_yellow_taxi:
+    target_schema: snapshots

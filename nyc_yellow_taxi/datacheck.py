@@ -8,5 +8,7 @@ print(con.sql("""
     --SELECT table_name, table_type
     --FROM information_schema.tables
     --WHERE table_schema = 'main'
-    SHOW ALL TABLES
+    --SHOW ALL TABLES
+    select * from taxi_rides_raw
+    limit 10
 """).fetchdf())

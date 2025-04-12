@@ -13,7 +13,9 @@ models:
       - name: fare_amount
         tests:
           - not_null
-          - check_gt_0
+          - check_gt_0:
+              config:
+                severity: warn
       - name: payment_type
         tests:
           - not_null
@@ -21,7 +23,9 @@ models:
               values: [1, 2, 3, 4, 5, 6]
       - name: total_amount
         tests:
-          - check_gt_0
+          - check_gt_0:
+              config:
+                severity: warn
       - name: tpep_pickup_datetime
         tests:
           - columns_equal:

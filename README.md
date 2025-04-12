@@ -30,5 +30,15 @@ dbt test --select nyc_yellow_taxi
 
 #### seeds
 - Seeds - sets of data which are external, not contained to the database
+- seeds are defined in *nyc_yellow_taxi/seeds* folder
 - use `dbt seed` in order to import seeds
 - `nynj_zipcodes.csv` downloaded from *DataCamp - Intermediate dbt*
+
+
+#### snapshots
+- definitions of snapshots are defined in *nyc_yellow_tax/snapshots* folder
+- use `dbt snapshot` in order to create snapshots
+
+#### automate building
+- use `dbt run` to build and test with one command - `dbt run + dbt test + dbt snapshot + dbt seed`
+- use `dbt run -d` for debugging
