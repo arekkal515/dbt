@@ -1,4 +1,4 @@
-# dbt
+ # dbt
 
 ### General information
 - The purpose of the project is to demonstrate a core of DBT functionalities such as dbt setup, model creation, Jinja templating, testing and documentation
